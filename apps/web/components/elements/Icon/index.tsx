@@ -1,10 +1,8 @@
-// Next Imports
 import dynamic from "next/dynamic";
 
 import { FaRegCircle } from "react-icons/fa";
 import { FiCircle } from "react-icons/fi";
 
-// React imports
 import type { IconBaseProps } from "react-icons";
 
 type DynamicIconProps = {
