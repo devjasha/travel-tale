@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "paths": {
       "@/styles/*": ["styles/*.scss"],
-      "@/components/*": ["components/*/*/*.tsx"],
+      "@/components/*": ["components/*"],
       "@/elements/*": ["components/elements/*"]
     },
     "plugins": [
