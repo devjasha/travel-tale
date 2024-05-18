@@ -5,13 +5,13 @@
 
 .inputField {
     border-radius: 10px;
-    inline-size: 150px;
+    inline-size: auto;
     block-size: 20px;
     padding: 5px;
 }
 
 .inputLabel {
     font-size:x-small;
-    padding-left: 7px;
-    padding-bottom: 2px;
+    padding-inline-start: 7px;
+    padding-block-end: 2px;
 }

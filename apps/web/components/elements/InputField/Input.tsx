@@ -2,22 +2,22 @@ import { FC } from "react";
 import styles from "./Input.module.scss";
 
 type InputProps = {
-    inputType: string;
-    inputName: string;
-    inputPlaceholder: string;
-    children: any;
+    type: string;
+    name: string;
+    placeholder: string;
+    label: string;
 };
 
 const InputField: FC<InputProps> = ({
-    inputType = "text",
-    inputName,
-    inputPlaceholder,
-    children,
+    type = "text",
+    name,
+    placeholder,
+    label,
 }) => {
     return (
         <div className={styles.input}>
-            <label className={styles.inputLabel} htmlFor={inputName}>{children}</label>
-            <input className={styles.inputField} type={inputType} name={inputName} placeholder={inputPlaceholder}/>
+            <label className={styles.inputLabel} htmlFor={name}>{label}</label>
+            <input className={styles.inputField} type={type} name={name} placeholder={placeholder}/>
         </div>
     );
 };
