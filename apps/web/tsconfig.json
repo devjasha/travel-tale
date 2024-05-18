@@ -5,7 +5,8 @@
     "paths": {
       "@/styles/*": ["styles/*.scss"],
       "@/components/*": ["components/*"],
-      "@/elements/*": ["components/elements/*"]
+      "@/elements/*": ["components/elements/*"],
+      "@/modules/*": ["components/modules/*"]
     },
     "plugins": [
       {
