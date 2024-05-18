@@ -1,7 +1,11 @@
+import Headline from "@/elements/Headline/Headline";
+
 const page = () => {
   return (
     <div>
-      <h1>Hello wrol</h1>Page
+      <Headline tag="h1" modifier="h1">
+        Travel Tale
+      </Headline>
     </div>
   );
 };
