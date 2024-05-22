@@ -1,10 +1,11 @@
-import Input from "@/components/elements/InputField/Input";
+import Headline from "@/elements/Headline/Headline";
 
 const page = () => {
   return (
     <div>
-      <h1>Hello wrol</h1>Page
-      <Input type="text" name="titleInput" placeholder="Name" label="DU Nudde"/>
+      <Headline tag="h1" modifier="h1">
+        Travel Tale
+      </Headline>
     </div>
   );
 };
