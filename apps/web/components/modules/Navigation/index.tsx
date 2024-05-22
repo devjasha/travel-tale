@@ -5,14 +5,14 @@ import NavigationLink from "@/components/elements/Link";
 import { usePathname } from "next/navigation";
 import styles from "./Navigation.module.scss";
 
-type LinkProps = {
+type NavigationLinkProps = {
   label: string;
   url: string;
   icon: string;
 };
 
 type NavigationProps = {
-  links: LinkProps[];
+  links: NavigationLinkProps[];
 };
 
 const Navigation: FC<NavigationProps> = ({ links }) => {
@@ -20,7 +20,7 @@ const Navigation: FC<NavigationProps> = ({ links }) => {
   return (
     <nav className={styles.navigation}>
       <ul className={styles.linkList}>
-        {links.map((link: LinkProps, index: number) => (
+        {links.map((link: NavigationLinkProps, index: number) => (
           <li className={styles.listItem} key={index}>
             <NavigationLink
               url={link.url}
